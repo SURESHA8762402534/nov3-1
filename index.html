@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+
+        <style>
+
+            body{
+                width: 400px;
+                height: 100px;
+                display: grid;
+                grid-template-columns: auto;
+                text-align: center;
+                align-content: center;
+                justify-content: center;
+                padding: 20% 10% 5% 35%;
+                background-color: blueviolet;
+            }
+
+            div{
+                width: 400px;
+                height: 100px;
+                background-color: brown;
+                color: white;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+              
+            }
+
+            
+            button{
+                background-color: blue;
+                color: white;
+                box-shadow: yellow;
+                font-size: 20px;
+                float: bottom;
+            }
+
+            button:hover{
+                background-color: white;
+                color: blue;
+                transition: 0.5s;
+            }
+        </style>
+    </head>
+    
+
+   
+    <body>
+
+        <div><input id="input"><br/>
+        <button onclick="btnclicked()" >click-me</button>
+        </div>
+
+
+        <script>
+            //js code
+            function btnclicked() {
+               // var btnText=document.getElementById('plus').innerText
+                //var inputBox=document.getElementById('inputText')
+                //console.log(inputBox)
+                //inputBox.value=btnText
+               var input = prompt("DOB", "ENTER YOUR DOB");
+               var valu = document.getElementById('input');
+               valu.value =  input;
+    
+    
+            }
+
+
+        </script>
+
+
+
+
+
+
+  <!-- <h1>javascript embedded</h1>
+
+        <input type="text" id='inputText' value="hello">
+
+      <button id='one' onclick="btnClicked('one')">1</button> 
+        
+        <button id='plus' onclick="btnClicked('two')">+</button> --->
+       
+
+    </body>
+</html>
